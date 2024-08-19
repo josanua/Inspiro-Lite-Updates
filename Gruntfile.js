@@ -315,7 +315,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( '@lodder/grunt-postcss' );
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
+	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-wp-readme-to-markdown' );
@@ -360,6 +362,7 @@ module.exports = function (grunt) {
 
 	// min all
 	grunt.registerTask( 'minify', [
+		'jshint-before-minify',
 		'style',
 		'cssmin:css',
 	] );
@@ -374,4 +377,6 @@ module.exports = function (grunt) {
 
 	// i18n
 	grunt.registerTask( 'i18n', [ 'addtextdomain', 'makepot' ] );
+
+	grunt.util.linefeed = '\n';
 }

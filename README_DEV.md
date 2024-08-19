@@ -20,12 +20,13 @@ v. 1.9.0
 
 ### Fixes
 * Implemented minor code improvements
-* Update to the latest npm packages.
-* Uninstall 'postcss-flexibility' package because no need support for IE 9 & 8 versions.
+* Update to the latest npm packages
+* Uninstall 'postcss-flexibility' package because no need support for IE 9 & 8 versions
+* Fixes npm 'contrib-uglify-es' deprecated package
 
 # TODO
-* Test/ask if *.css styles are ok after new updates and minor changes in files.
+* Test/ask if *.css styles are ok after new updates and minor changes in files
 * Fix all Grunt sass warnings
-* Delete commented deactivated packages in Grunt file after all tests.
+* Delete commented deactivated packages in Grunt file after all tests
 
 

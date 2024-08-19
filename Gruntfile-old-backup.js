@@ -557,13 +557,13 @@ module.exports = function ( grunt ) {
 	// grunt.loadNpmTasks( 'grunt-contrib-uglify-es' ); // ??? This package has been deprecated
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 	// grunt.loadNpmTasks( 'grunt-contrib-watch' );
-	// grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	// grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 	// grunt.loadNpmTasks( 'grunt-contrib-compress' );
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-wp-readme-to-markdown' );
-	// grunt.loadNpmTasks( 'grunt-wp-i18n' );
+	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-bumpup' );
 	// grunt.loadNpmTasks( 'grunt-text-replace' );
 	// grunt.loadNpmTasks( 'grunt-json2php' );
