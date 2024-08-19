@@ -110,8 +110,9 @@ Source: https://stocksnap.io/photo/autumn-trees-WV0YTVMU7P
 * Customizer UX Improved
   * Eliminate annoying stuff
   * Add icons
-  * Minor code improvements
-  * Update npm packages
+  * Implemented minor code improvements
+  * Update to the latest npm packages
+  * Minor bug fixes
 
 = 1.8.8 =
 * Minor bug fixes

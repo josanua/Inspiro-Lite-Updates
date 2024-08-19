@@ -19,7 +19,8 @@ v. 1.9.0
 * Eliminate overqualified elements like li and h3
 
 ### Fixes
-* Update to last npm packages
+* Implemented minor code improvements
+* Update to the latest npm packages.
 * Uninstall 'postcss-flexibility' package because no need support for IE 9 & 8 versions.
 
 # TODO

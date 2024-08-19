@@ -554,7 +554,7 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-rtlcss' );
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( '@lodder/grunt-postcss' );
-	// grunt.loadNpmTasks( 'grunt-contrib-uglify-es' ); // ???
+	// grunt.loadNpmTasks( 'grunt-contrib-uglify-es' ); // ??? This package has been deprecated
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 	// grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	// grunt.loadNpmTasks( 'grunt-contrib-jshint' );
@@ -564,7 +564,7 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-wp-readme-to-markdown' );
 	// grunt.loadNpmTasks( 'grunt-wp-i18n' );
-	// grunt.loadNpmTasks( 'grunt-bumpup' );
+	grunt.loadNpmTasks( 'grunt-bumpup' );
 	// grunt.loadNpmTasks( 'grunt-text-replace' );
 	// grunt.loadNpmTasks( 'grunt-json2php' );
 

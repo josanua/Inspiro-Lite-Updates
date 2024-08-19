@@ -265,6 +265,40 @@ module.exports = function (grunt) {
 			},
 		},
 
+		makepot: {
+			target: {
+				options: {
+					domainPath: '/languages',
+					potFilename: '<%= pkg._project.textdomain %>.pot',
+					potHeaders: {
+						poedit: true,
+						'x-poedit-keywordslist': true,
+					},
+					type: 'wp-theme',
+					updateTimestamp: true,
+				},
+			},
+		},
+
+		addtextdomain: {
+			options: {
+				textdomain: '<%= pkg._project.textdomain %>',
+				updateDomains: [ 'twentyseventeen', 'inspiro-lite', 'wpzoom' ],
+			},
+			target: {
+				files: {
+					src: [
+						'*.php',
+						'**/*.php',
+						'!node_modules/**',
+						'!tests/**',
+						'!docs/**',
+						'!vendor/**',
+					],
+				},
+			},
+		},
+
 		bumpup: {
 			options: {
 				updateProps: {
@@ -273,8 +307,6 @@ module.exports = function (grunt) {
 			},
 			file: 'package.json',
 		},
-
-
 	});
 
 
@@ -288,7 +320,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-wp-readme-to-markdown' );
 	grunt.loadNpmTasks( 'grunt-bumpup' );
-
+	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 
 	// --- Register tasks --- //
 	// Bump Version - `grunt version-bump --ver=<version-number>`
@@ -339,4 +371,7 @@ module.exports = function (grunt) {
 
 	// Generate Readme file
 	grunt.registerTask( 'readme', [ 'wp_readme_to_markdown' ] );
+
+	// i18n
+	grunt.registerTask( 'i18n', [ 'addtextdomain', 'makepot' ] );
 }
