@@ -67,7 +67,7 @@ class Inspiro_Footer_Copyright_Config {
 				array(
 					'type'        => 'copyright-wp-editor',
 					'label'       => __( 'Copyright text', 'inspiro' ),
-					'description' => __( 'You can insert some available HTML code tags: {copyright}, {year}, {site-title}' ),
+					'description' => __( 'You can insert some available HTML code tags: {copyright}, {year}, {site-title}', 'inspiro' ),
 					'section'     => 'footer-area', // Link to the section
 					'settings'    => 'footer_copyright_text_setting', // Link to the setting
 				)
